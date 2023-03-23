@@ -33,6 +33,6 @@ public static void main(String args[])
   c1.showComplex();
   c2.showComplex();
   ComplexAddition c3=c1.addition(c2);
-  c3.showComplex();
+ System.out.println("Sum is:"+c3.showComplex());
 }
 }
