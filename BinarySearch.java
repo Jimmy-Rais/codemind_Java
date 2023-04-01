@@ -60,7 +60,7 @@ int el=sc.nextInt();
 int result=binarySearch(x,n,el);
 if(result!=-1)
 {
- System.out.println("Element found at index"+ result);
+ System.out.println("This element is the "+result+"element of the array");
 }
 else
 {
