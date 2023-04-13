@@ -46,7 +46,7 @@ v=new Bike();
 System.out.println("=================");
 System.out.println("Bike:");
 w=v.get_No_Wheels();
-c=v.seating_Capacity();
+c=v.seating_Capacity(); 
 System.out.println("No of Wheels:"+w);
 System.out.println("Seating Capacity:"+c);
 System.out.println("==========");
