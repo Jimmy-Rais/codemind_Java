@@ -1,0 +1,48 @@
+import java.util.Scanner;
+class Box
+{
+   double l,b,h,area,vol;
+   public Box()   // Default Constructor
+	{
+      l=b=h=1;
+	}
+   public Box(double d)
+	{
+	   l=b=h=d;
+	}
+	
+	public Box(double length,double breadth,double height)
+	{
+		l=length;
+		b=breadth;
+		h=height;
+	}
+	public double calArea()
+	{
+		return l*b;
+	}
+public double calVolume()
+	{
+		 return l*b*h;
+	}
+	public void showBoxInfo()
+	{
+		System.out.println(l+" "+b+" "+h);
+		System.out.println("Area = "+calArea());
+		System.out.println("Volume = "+calVolume());
+	}
+}
+class Mainclass
+{
+	public static void main(String args[])
+	{
+           Box b1=new Box();  // It calls the default constructor
+		   b1.showBoxInfo();
+
+		   Box b2=new Box(4); // It calls the parameterized constructor
+		   b2.showBoxInfo();
+
+		   Box b3=new Box(4,5,6); //It call the parameterize constructor
+           b3.showBoxInfo();
+	}
+}
